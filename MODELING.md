@@ -40,6 +40,9 @@ construction → a valid GP/covariance kernel**. Drop it straight into a PyMC / 
 NumPyro GP prior over the 310 industries (a 310×310 covariance is tiny). Similar
 industries (Iron & Steel ↔ Foundries) shrink toward each other; distant ones don't.
 
+A **runnable** version of this is in [`examples/hbm_kernel_example.py`](examples/hbm_kernel_example.py)
+(fits prose-tier industries against a synthetic outcome; swap in your real likelihood).
+
 ### PyMC sketch
 
 ```python

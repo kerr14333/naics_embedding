@@ -8,6 +8,19 @@ model-ready predictor matrix.
 The industry descriptions are enriched with **Census 2022 NAICS** definitional prose,
 so closeness reflects what an industry actually *does* — not just its title.
 
+## Visuals
+
+UMAP 2-D projection colored by BLS supersector (left) and by HDBSCAN cluster (right):
+
+| By supersector | By cluster |
+|---|---|
+| ![UMAP by supersector](docs/images/plot_supersector.png) | ![UMAP by cluster](docs/images/plot_cluster.png) |
+
+Cosine-distance matrix, rows/cols ordered by cluster (bright diagonal blocks = tight
+clusters; the dark band is the title-only aggregate rows, far from every real industry):
+
+![Cluster-ordered distance heatmap](docs/images/heatmap_clustered.png)
+
 ## What it produces
 
 | File (`out/`) | What it is |
