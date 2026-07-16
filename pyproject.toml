@@ -1,0 +1,17 @@
+[project]
+name = "naics-embedding"
+version = "0.1.0"
+description = "Sentence embeddings for BLS CES State & Area industries, enriched with Census NAICS descriptions"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "hdbscan>=0.8.44",
+    "matplotlib>=3.11.0",
+    "openpyxl>=3.1.5",
+    "pandas>=3.0.3",
+    "pyarrow>=25.0.0",
+    "requests>=2.34.2",
+    "scikit-learn>=1.9.0",
+    "sentence-transformers>=5.6.0",
+    "umap-learn>=0.5.12",
+]

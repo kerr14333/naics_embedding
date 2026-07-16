@@ -1,0 +1,10 @@
+# virtualenv
+.venv/
+
+# raw + generated data (regenerable via scripts)
+data/
+out/
+
+# python
+__pycache__/
+*.pyc
