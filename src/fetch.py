@@ -32,6 +32,8 @@ BLS_FILES = [
     "sm.supersector",  # supersector_code -> supersector_name
     "sm.series",       # series_id -> state/area/supersector/industry/data_type
     "sm.data_type",    # data_type_code -> data_type_text (context)
+    "sm.state",        # state_code -> state_name
+    "sm.area",         # area_code -> area_name
 ]
 
 CENSUS_FILES = {

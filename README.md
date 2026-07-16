@@ -34,6 +34,7 @@ clusters; the dark band is the title-only aggregate rows, far from every real in
 | `plot_supersector.png`, `plot_cluster.png` | 2-D scatter (by supersector / by cluster) |
 | `heatmap_clustered.png` | cosine-distance matrix, ordered by cluster |
 | `pca_explained_variance.csv` | per-component + cumulative variance |
+| `publication_cells.parquet` / `.csv` | the 16,232 unique SM publication cells (state×area×supersector×industry), decoded + linked to embeddings via `industry_code` (tracked copy in `docs/`) |
 | `*_manifest.json`, `data/manifest.json` | model + data provenance (dates, hashes) |
 
 For using the matrix in a **hierarchical Bayesian model**, see **[MODELING.md](MODELING.md)**.
@@ -48,6 +49,7 @@ src/similar.py            nearest-industry lookup (sanity check + query tool)
 src/reduce.py   ->  out/     UMAP 2-D + HDBSCAN clusters + plots
 src/matrix.py   ->  out/     predictor matrices + cosine matrix
 src/heatmap.py  ->  out/     cluster-ordered distance heatmap
+src/cells.py    ->  out/     decoded, deduped SM publication cells linked to embeddings
 ```
 
 ### Run it
